@@ -19,8 +19,9 @@ export default {
 			}
 		},
 		fontFamily: {
-			display: ['Cormorant Garamond', 'Georgia', 'serif'],
-			sans: ['DM Sans', 'system-ui', 'sans-serif'],
+			display: ['Bebas Neue', 'Impact', 'sans-serif'],
+			sans: ['Syne', 'system-ui', 'sans-serif'],
+			mono: ['Syne Mono', 'monospace'],
 		},
 		extend: {
 			colors: {
@@ -93,7 +94,19 @@ export default {
 				'line-grow': {
 					from: { scaleX: '0' },
 					to: { scaleX: '1' }
-				}
+				},
+				'slide-left': {
+					from: { opacity: '0', transform: 'translateX(-40px)' },
+					to: { opacity: '1', transform: 'translateX(0)' }
+				},
+				'slide-right': {
+					from: { opacity: '0', transform: 'translateX(40px)' },
+					to: { opacity: '1', transform: 'translateX(0)' }
+				},
+				'marquee': {
+					from: { transform: 'translateX(0)' },
+					to: { transform: 'translateX(-50%)' }
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -102,7 +115,12 @@ export default {
 				'fade-up-delay': 'fade-up 0.8s cubic-bezier(0.16,1,0.3,1) 0.2s forwards',
 				'fade-up-delay2': 'fade-up 0.8s cubic-bezier(0.16,1,0.3,1) 0.4s forwards',
 				'fade-in': 'fade-in 1s ease forwards',
-				'line-grow': 'line-grow 1s cubic-bezier(0.16,1,0.3,1) 0.3s forwards'
+				'line-grow': 'line-grow 1s cubic-bezier(0.16,1,0.3,1) 0.3s forwards',
+				'slide-left': 'slide-left 0.9s cubic-bezier(0.16,1,0.3,1) forwards',
+				'slide-left-delay': 'slide-left 0.9s cubic-bezier(0.16,1,0.3,1) 0.15s forwards',
+				'slide-left-delay2': 'slide-left 0.9s cubic-bezier(0.16,1,0.3,1) 0.3s forwards',
+				'slide-right': 'slide-right 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s forwards',
+				'marquee': 'marquee 18s linear infinite',
 			}
 		}
 	},
