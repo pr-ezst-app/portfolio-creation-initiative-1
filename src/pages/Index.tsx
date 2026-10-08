@@ -137,7 +137,7 @@ export default function Index() {
 
           <h1 className="font-display text-[clamp(4.5rem,16vw,14rem)] leading-[0.9] tracking-wider mb-6 opacity-0 animate-slide-left-delay">
             MAKE IT<br />
-            <span className="text-transparent" style={{ WebkitTextStroke: "2px white" }}>MATTER</span>
+            <span className="text-transparent" style={{ WebkitTextStroke: "2px white" }}>MATTER.</span>
           </h1>
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 opacity-0 animate-slide-left-delay2">
